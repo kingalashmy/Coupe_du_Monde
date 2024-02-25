@@ -1,0 +1,65 @@
+[
+    {
+        "Nom":"Sánchez",
+        "Prenom":"Robert",
+        "Âge" : "18/11/1997 (25 ans)",
+        "Taille" : "197 cm",
+        "Poids" : "90 kg",
+        "Poste du joueur" : "Gardien de but",
+        "Salaire" : "19 K € / mois",
+        "Contrat" : "En contrat jusqu'au 06/2023",
+        "Meilleur pied ": "Gauche",
+        "Équipe nationale" : "Espagne",
+        "Club actuel" : "Brighton",
+        "Championnat" : "Premier League",
+        "Pays" : "Angleterre"         
+    },
+
+    {
+        "Nom": "Azpilicueta",
+        "Prenom":"César ",
+        "Âge" : "28/08/1989 (33 ans)",
+        "Taille" : "178 cm",
+        "Poids" : "76 kg",
+        "Poste du joueur" : "Défenseur",
+        "Salaire" : "416 K € / mois",
+        "Contrat" : "En contrat jusqu'au 06/2024",
+        "Meilleur pied" : "Droit",
+        "Équipe nationale" : "Espagne",
+        "Club actuel" : "Chelsea FC",
+        "Championnat" : "Premier League",
+        "Pays" : "Angleterre"
+    },
+
+    {
+        "Nom":"Busquets",
+        "Prenom":"Sergio",
+        "Âge" : "16/07/1988 (34 ans)",
+        "Taille" : "189 cm",
+        "Poids" : "76 kg",
+        "Poste du joueur" : "Milieu",
+        "Salaire" : "1,05 M € / mois",
+        "Contrat" : "En contrat jusqu'au 06/2023",
+        "Meilleur pied" : "Droit",
+        "Équipe nationale" : "Espagne",
+        "Club actuel" : "Barcelone",
+        "Championnat" : "Liga",
+        "Pays" : "Espagne"
+    },
+
+    {
+        "Nom":"Morata",
+        "Prenom":"Álvaro",
+        "Âge" : "23/10/1992 (30 ans)",
+        "Taille" : "190 cm",
+        "Poids" : "84 kg",
+        "Poste du joueur" : "Attaquant",
+        "Salaire" : "300 K € / mois",
+        "Contrat" : "En contrat jusqu'au 06/2024",
+        "Meilleur pied" : "Droit",
+        "Équipe nationale" : "Espagne",
+        "Club actuel" : "Atlético Madrid",
+        "Championnat" : "Liga",
+        "Pays" : "Espagne"        
+    }
+]

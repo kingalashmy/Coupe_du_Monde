@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+       <!--  <link rel="preconnect" href="https://fonts.gstatic.com">-->
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Coupe De Monde 2022</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="site-logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Accueil</a></li>
+                <li class="">
+                    <div  id="groupes-button">Groupes</div>
+                    <div id="drop-down-one" class="drop-down-menu | drop-down-one" area="false">
+                        <ul>
+                            <li><a id="grp1" onclick="afficher_grp(this)"  href="#">Groupe A </a></li>
+                            <li><a id="grp2" onclick="afficher_grp(this)"   href="#">Groupe B</a></li>
+                            <li><a id="grp3" onclick="afficher_grp(this)" href="#">Groupe C</a></li>
+                            <li><a href="#">Groupe D</a></li>
+                            <li><a href="#">Groupe E</a></li>
+                            <li><a href="#">Groupe F</a></li>
+                            <li><a href="#">Groupe G</a></li>
+                            <li><a href="#">Groupe H</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class=""><a id="mat" onclick="matchs(this)" href="#">Matchs</a></li>
+                <li class=""><a id="cls" onclick="classement(this)" href="#">Classement</a></li>
+                <li class=""><a href="#">Actualitées</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="template-grid">
+       <section class="side-bar-1" onclick="">
+               <!-- actualite 2 -->
+
+  
+            <div class="groups">
+              <div class="grp-a">
+                <div class="group-title">
+                    <h2>Groupe A</h2>
+                </div>
+                <div class="groupe_a">
+
+                    <div class="pays1 | pays">
+                        <a href ="#"><img src="./images/groupes/croatie.png" alt="act1"></a>
+                        <p>
+                            Croatie
+                        </p>
+                        <div  class="cover-shadow-box"></div>
+
+                    </div>
+
+                    <div  class="pays2 | pays">
+                        <a href ="#"><img src="./images/groupes/maroc.png" alt="act1"></a>
+                        <p>
+                            Maroc
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                        <div id="maroc-drapeaux" class="cover-no-shadow-box" onclick="afficher_joueur(this)"></div>
+                    </div>
+
+                    <div class="pays3 | pays">
+                        <a href ="#"><img src="./images/groupes/Belgique.png" alt="act1"></a>
+                        <p>
+                            Belgique
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+                    <div class="pays4 | pays">
+                        <a href ="#"><img src="./images/groupes/Canada.png" alt="act1"></a>
+                        <p>
+                            Canada
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+               </div> 
+
+           </div>
+
+
+                <div class="grp-b">
+                <div class="group-title ">
+                    <h2>Groupe B</h2>
+                </div>
+                <div class="group_b">
+                    
+                    <div class="pays5 | pays">
+                        <a href ="#"><img src="./images/groupes/Pays-Bas.png" alt="act1"></a>
+                        <p>
+                            Pays-Bas
+                        </p>
+                        <div class="cover-shadow-box"></div>
+
+                    </div>
+
+                    <div class="pays6 | pays">
+                        <a href ="#"><img src="./images/groupes/Equateur.png" alt="act1"></a>
+                        <p>
+                            Equateur
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+                    <div class="pays7 | pays">
+                        <a href ="#"><img src="./images/groupes/Sénégal.png" alt="act1"></a>
+                        <p>
+                            Sénégal
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+                    <div class="pays8 | pays">
+                        <a href ="#"><img src="./images/groupes/Qatar.png" alt="act1"></a>
+                        <p>
+                            Qatar
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+                </div>
+         </div>  
+         
+         <div class="grp-c">
+                <div class="group-title ">
+                    <h2>Groupe C</h2>
+                </div>
+                <div class="groupe_c">
+                    
+                    <div class="pays9 | pays">
+                        <a href ="#"><img src="./images/groupes/Espagne.png" alt="act1"></a>
+                        <p>
+                            Espagne
+                        </p>
+                        <div id="" class="cover-shadow-box" ></div>
+
+                        <div id="espagne-drapeaux" class="cover-no-shadow-box" onclick="afficher_joueur(this)"></div>
+                    </div>
+
+                    <div class="pays10 | pays">
+                        <a href ="#"><img src="./images/groupes/Japon.png" alt="act1"></a>
+                        <p>
+                            Japon
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+                    <div class="pays11 | pays">
+                        <a href ="#"><img src="./images/groupes/Costa Rica.png" alt="act1"></a>
+                        <p>
+                            Costa Rica
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+                    <div class="pays12 | pays">
+                        <a href ="#"><img src="./images/groupes/Allemagne.png" alt="act1"></a>
+                        <p>
+                            Allemagne
+                        </p>
+                        <div class="cover-shadow-box"></div>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+        </section>
+      
+        <div class="vol-3-vol-4-container">
+
+          <div> <img class="imo" src="images/qat1.jpg" alt=""></div>
+
+
+          <section class="vol-3">
+            <a href="#fich1" id="yassin" onclick="fich(this)" class="player ma_player" >
+                <div>
+                    <img src="./images/Players/bounou_yassine.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Yassine</h4>
+                    <h5 class="player-last-name">Bounou</h5>
+                </div>
+            </a>
+            <a href="#fich2" id="monir" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/monir_el_kajoui.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Monir</h4>
+                    <h5 class="player-last-name">El kajoui</h5>
+                </div>
+            </a>
+            <a href="#fich3" id="reda" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/tagnaouti_ahmed.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Ahmed</h4>
+                    <h5 class="player-last-name">tagnaouti</h5>
+                </div>
+            </a>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/abde_azzalzouli.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Abde</h4>
+                    <h5 class="player-last-name">Azzalzouli</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/abdelhamid_sabiri.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Abdelhamid</h4>
+                    <h5 class="player-last-name">Sabiri</h5>
+                </div>
+            </div>
+            <a href="#fich4" id="abderrazak" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/abderrazak_hamdallah.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Abderrazak</h4>
+                    <h5 class="player-last-name">Hamdallah</h5>
+                </div>
+            </a>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/achraf_dari.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Achraf</h4>
+                    <h5 class="player-last-name">Dari</h5>
+                </div>
+            </div>
+            <a href="#fich5" id="nayef" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/aguerd_nayef.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Nayef</h4>
+                    <h5 class="player-last-name">Aguerd</h5>
+                </div>
+            </a>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/anass_zaroury.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Anass</h4>
+                    <h5 class="player-last-name">Zaroury</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/azzedine_ounahi.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Azzedine</h4>
+                    <h5 class="player-last-name">Ounahi</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/badr_benoun.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Badr</h4>
+                    <h5 class="player-last-name">Benoun</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/bilal_el_khannouss.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Bilal</h4>
+                    <h5 class="player-last-name">El Khannouss</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/el_yamiq_jawad.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Jawad</h4>
+                    <h5 class="player-last-name">El Yamiq</h5>
+                </div>
+            </div>
+            <a href="#fich6" id="hakim" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/hakim_ziyech.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Hakim</h4>
+                    <h5 class="player-last-name">Ziyech</h5>
+                </div>
+            </a>
+            <a href="#fich7" id="achraf" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/hakimi_achraf.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Achraf</h4>
+                    <h5 class="player-last-name">Hakimi</h5>
+                </div>
+            </a>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/ilias_chair.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Ilias</h4>
+                    <h5 class="player-last-name">Chair</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/mazraoui_noussair.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Noussair</h4>
+                    <h5 class="player-last-name">Mazraoui</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/saiss_romain.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Romain</h4>
+                    <h5 class="player-last-name">Saiss</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/selim_amallah.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Selim</h4>
+                    <h5 class="player-last-name">Amallah</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/sofiane_boufal.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Sofiane</h4>
+                    <h5 class="player-last-name">Boufal</h5>
+                </div>
+            </div>
+            <a href="#fich8" id="sofyan" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/sofyan_amrabat.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Sofyan</h4>
+                    <h5 class="player-last-name">Amrabat</h5>
+                </div>
+            </a>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/walid_cheddira.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Walid</h4>
+                    <h5 class="player-last-name">Cheddira</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/yahya_attiat_allah.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Yahya</h4>
+                    <h5 class="player-last-name">Attiat Allah</h5>
+                </div>
+            </div>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/yahya_jabrane.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Yahya</h4>
+                    <h5 class="player-last-name">Jabrane</h5>
+                </div>
+            </div>
+            <a href="#fich9" id="youssef" onclick="fich(this)" class="player ma_player">
+                <div>
+                    <img src="./images/Players/youssef_en_nesyri.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Youssef</h4>
+                    <h5 class="player-last-name">Ennesyri</h5>
+                </div>
+            </a>
+            <div class="player ma_player">
+                <div>
+                    <img src="./images/Players/zakaria_aboukhlal.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Zakaria</h4>
+                    <h5 class="player-last-name">Aboukhlal</h5>
+                </div>
+            </div>
+            <a href="#fich10" id="sanchez" onclick="fich(this)" class="player es_player">
+                <div>
+                    <img src="./images/Players/robert_sanchez.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Robert</h4>
+                    <h5 class="player-last-name">Sanchez</h5>
+                </div>
+            </a>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/david_raya.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">david</h4>
+                    <h5 class="player-last-name">Raya</h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/unai_simon.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Unai</h4>
+                    <h5 class="player-last-name">Simon</h5>
+                </div>
+            </div>
+            <a href="#fich11" id="morata" onclick="fich(this)" class="player es_player">
+                <div>
+                    <img src="./images/Players/alvaro_morata.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Alvaro</h4>
+                    <h5 class="player-last-name">Morata</h5>
+                </div>
+            </a>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/marco_asensio.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Marco</h4>
+                    <h5 class="player-last-name">Asensio</h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/ferran_torres.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Ferran</h4>
+                    <h5 class="player-last-name">Torres</h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/nico_williams.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Nico</h4>
+                    <h5 class="player-last-name">Williams</h5>
+                </div>
+            </div>
+            <a href="#fich12" id="busquets" onclick="fich(this)" class="player es_player">
+                <div>
+                    <img src="./images/Players/sergio_busquets.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Sergio</h4>
+                    <h5 class="player-last-name">Busquets</h5>
+                </div>
+            </a>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/marcos_llorente.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">marcos</h4>
+                    <h5 class="player-last-name">llorente</h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/koke.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">KOKE</h4>
+                    <h5 class="player-last-name"></h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/gavi.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">GAVI</h4>
+                    <h5 class="player-last-name"></h5>
+                </div>
+            </div>
+            <a href="#fich13" id="azpilicueta" onclick="fich(this)" class="player es_player">
+                <div>
+                    <img src="./images/Players/cesar_azpilicueta.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Cesar</h4>
+                    <h5 class="player-last-name">Azpilicueta</h5>
+                </div>
+            </a>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/eric_garcia.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Eric</h4>
+                    <h5 class="player-last-name">Garcia</h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/pau_torres.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Pau</h4>
+                    <h5 class="player-last-name">Torres</h5>
+                </div>
+            </div>
+            <div class="player es_player">
+                <div>
+                    <img src="./images/Players/alejandro_balde.png" alt="">
+                </div>
+                <div>
+                    <h4 class="player-fist-name">Alejandro</h4>
+                    <h5 class="player-last-name">Balde</h5>
+                </div>
+            </div>
+    </section>
+            <section class="vol-4">
+                
+                <div class="fiche_technique">
+                    <div id="fich1" class="fiche">
+                         <img class="m1" src="images/Players/bounou_yassine.png" alt="">
+                        <ul>
+                         <div class="cart">
+                           <li>Nom : Bounou</li>
+                           <li>Prenom : Yassine</li>
+                           <li>Âge : 31 ans</li>
+                           <li>Taille : 195 cm</li>
+                           <li>Poids" : 78 kg</li>
+                           <li>Poste du joueur : Gardien de but</li>
+                           <li>Salaire : 75 K € / mois</li>
+                           <li>Contrat : En contrat jusqu'au 06/2025</li>
+                           <li>Meilleur pied : Droit</li>
+                           <li>Équipe nationale : Maroc</li>
+                           <li>Club actuel : FC Séville</li>
+                           <li>Championnat : Liga</li>
+                           <li>Pays : Espagne</li>
+                        </div>
+                        </ul>
+                    </div>
+                    <div id="fich2" class="fiche">
+                        <img class="m1" src="images/Players/monir_el_kajoui.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : El Kajoui</li>
+                            <li>Prenom : Munir</li>
+                            <li>Âge : 33 ans</li>
+                            <li>Taille : 190 cm</li>
+                            <li>Poids : 89 kg</li>
+                            <li>Poste du joueur : Gardien de but</li>
+                            <li>Salaire : 75 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2025</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : Al Wehda Mecca</li>
+                            <li>Championnat : Saudi Pro League (Arabie Saoudite)</li>
+                            <li>Pays : Arabie saoudite</li>
+                    </div>
+                         </ul>
+                    </div>
+                    <div id="fich3" class="fiche">
+                        <img class="m1" src="images/Players/tagnaouti_ahmed.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Tagnaouti</li>
+                            <li>Prenom : Reda</li>
+                            <li>Âge : 26 ans</li>
+                            <li>Taille : 192 cm</li>
+                            <li>Poids : 76 kg</li>
+                            <li>Poste du joueur : Gardien de but</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : Wydad Casablanca</li>
+                            <li>Championnat : Botola Pro (Maroc)</li>
+                            <li>Pays : Maroc</li>
+                          </div>
+                         </ul>
+                    </div>
+                    <div id="fich4" class="fiche">
+                        <img class="m1" src="images/Players/hakimi_achraf.png" alt="">
+                        <ul>
+                          <div class="cart">
+                            <li>Nom : Hakimi</li>
+                            <li>Prenom : Achraf</li>
+                            <li>Âge : 24 ans</li>
+                            <li>Taille : 181 cm</li>
+                            <li>Poids : 73 kg</li>
+                            <li>Poste du joueur : Défenseur</li>
+                            <li>Salaire : 75 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2026</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : Paris Saint-Germain</li>
+                            <li>Championnat : Ligue 1 Uber Eat</li>
+                            <li>Pays : France</li>
+                          </div>
+                         </ul>
+                    </div>
+                    <div id="fich5" class="fiche">
+                        <img class="m1" src="images/Players/aguerd_nayef.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Aguerd</li>
+                            <li>Prenom : Nayef</li>
+                            <li>Âge : 26 ans</li>
+                            <li>Taille : 190 cm</li>
+                            <li>Poids : 76 kg</li>
+                            <li>Poste du joueur : Défenseur</li>
+                            <li>Meilleur pied : Gauche</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : West Ham</li>
+                            <li>Championnat : Premier League</li>
+                            <li>Pays : Angleterre</li>
+                        </div>
+                         </ul>
+                    </div>
+                    <div id="fich6" class="fiche">
+                        <img class="m1" src="images/Players/sofyan_amrabat.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Amrabat</li>
+                            <li>Prenom : Sofyan</li>
+                            <li>Âge : 26 ans</li>
+                            <li>Taille : 183 cm</li>
+                            <li>Poids : 70 kg</li>
+                            <li>Poste du joueur : Milieu</li>
+                            <li>Salaire : 125 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2024</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : Fiorentina </li>
+                            <li>Championnat : Serie A</li>
+                            <li>Pays : Italie</li>
+                        </div>
+                         </ul>
+                    </div>
+                    <div id="fich7" class="fiche">
+                        <img class="m1" src="images/Players/hakim_ziyech.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Ziyech</li>
+                            <li>Prenom : Hakim</li>
+                            <li>Âge : 29 ans</li>
+                            <li>Taille : 180 cm</li>
+                            <li>Poids : 65 kg</li>
+                            <li>Poste du joueur : Milieu</li>
+                            <li>Salaire : 506 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2025</li>
+                            <li>Meilleur pied : Gauche</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : Chelsea FC</li>
+                            <li>Championnat : Premier League</li>
+                            <li>Pays : Angleterre</li>
+                        </div>
+                         </ul>
+                    </div>
+                    <div id="fich8" class="fiche">
+                        <img class="m1" src="images/Players/abderrazak_hamdallah.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Hamedallah</li>
+                            <li>Prenom : Abderrazak</li>
+                            <li>Âge : 31 ans</li>
+                            <li>Taille : 179 cm</li>
+                            <li>Poids : 75 kg</li>
+                            <li>Poste du joueur : Attaquant</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : Al Ittihad Djeddah</li>
+                            <li>Championnat : Saudi Pro League (Arabie Saoudite)</li>
+                            <li>Pays : Arabie saoudite</li>
+                        </div>
+                         </ul>
+                    </div>
+                    <div id="fich9" class="fiche">
+                        <img class="m1" src="images/Players/youssef_en_nesyri.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : En-Nesyri</li>
+                            <li>Prenom : Youssef</li>
+                            <li>Âge : 25 ans</li>
+                            <li>Taille : 188 cm</li>
+                            <li>Poids : 73 kg</li>
+                            <li>Poste du joueur : Attaquant</li>
+                            <li>Salaire : 100 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2025</li>
+                            <li>Meilleur pied : Gauche</li>
+                            <li>Équipe nationale : Maroc</li>
+                            <li>Club actuel : FC Séville</li>
+                            <li>Championnat : Liga</li>
+                            <li>Pays : Espagne</li>
+                        </div>
+                         </ul>
+                    </div>
+                    <div id="fich10" class="fiche">
+                        <img class="m1" src="images/Players/robert_sanchez.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Sánchez</li>
+                            <li>Prenom : Robert</li>
+                            <li>Âge : 25 ans</li>
+                            <li>Taille : 197 cm</li>
+                            <li>Poids" : 90 kg</li>
+                            <li>Poste du joueur : Gardien de but</li>
+                            <li>Salaire : 19 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2023</li>
+                            <li>Meilleur pied : Gauche</li>
+                            <li>Équipe nationale : Espagne</li>
+                            <li>Club actuel : Brighton</li>
+                            <li>Championnat : Premier League</li>
+                            <li>Pays : Angleterre</li>
+                          </div>
+                         </ul>
+                    </div>
+                    <div id="fich11" class="fiche">
+                        <img class="m1" src="images/Players/cesar_azpilicueta.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Azpilicueta</li>
+                            <li>Prenom : César</li>
+                            <li>Âge : 33 ans</li>
+                            <li>Taille : 178 cm</li>
+                            <li>Poids : 76 kg</li>
+                            <li>Poste du joueur :  Défenseur</li>
+                            <li>Salaire : 416 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2024</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Espagne</li>
+                            <li>Club actuel : Chelsea FC</li>
+                            <li>Championnat : Premier League</li>
+                            <li>Pays : Angleterre</li>
+                            </div>
+                         </ul>
+                    </div>
+                    <div id="fich12" class="fiche">
+                        <img class="m1" src="images/Players/sergio_busquets.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Busquets</li>
+                            <li>Prenom : Sergio</li>
+                            <li>Âge : 34 ans</li>
+                            <li>Taille : 189 cm</li>
+                            <li>Poids : 76 kg</li>
+                            <li>Poste du joueur : Milieu</li>
+                            <li>Salaire : 1,05 M € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2023</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Espagne</li>
+                            <li>Club actuel : Barcelone</li>
+                            <li>Championnat : Liga</li>
+                            <li>Pays : Espagne</li>
+                            </div>
+                         </ul>
+                    </div>
+                    <div id="fich13" class="fiche">
+                        <img class="m1" src="images/Players/alvaro_morata.png" alt="">
+                        <ul>
+                            <div class="cart">
+                            <li>Nom : Morata</li>
+                            <li>Prenom : Álvaro</li>
+                            <li>Âge : 30 ans</li>
+                            <li>Taille : 190 cm</li>
+                            <li>Poids : 84 kg</li>
+                            <li>Poste du joueur : Attaquant</li>
+                            <li>Salaire : 300 K € / mois</li>
+                            <li>Contrat : En contrat jusqu'au 06/2024</li>
+                            <li>Meilleur pied : Droit</li>
+                            <li>Équipe nationale : Espagne</li>
+                            <li>Club actuel : Atlético Madrid</li>
+                            <li>Championnat : Liga</li>
+                            <li>Pays : Espagne</li>
+                            </div>
+                         </ul>
+                    </div>
+                </div>
+            </section>
+                <div class="daha"></div>
+                <div class="matchs">
+                    <h1>Matches</h1>
+                    <div class="match">
+                        <div class="match-info">
+                            <div>Match 41, Groupe F</div>
+                            <div>01 dec. 2022</div> 
+                        </div> 
+                        <div class="match-location">Ahmad Bin Ali Stadium</div>
+                        <div class="container-teams-time">
+                            <div class="teams">
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/croatie.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Croatie</p>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/Belgique.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Belgique</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time">16:00</div>
+                        </div>
+                    </div>
+                    <div class="match">
+                        <div class="match-info">
+                            <div>Match 42, Groupe F</div>
+                            <div>01 dec. 2022</div> 
+                        </div> 
+                        <div class="match-location">Al Thumama Stadium</div>
+                        <div class="container-teams-time">
+                            <div class="teams">
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/Canada.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Canada</p>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/maroc.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Maroc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time">16:00</div>
+                        </div>
+                    </div>
+                    <div class="match">
+                        <div class="match-info">
+                            <div>Match 43, Groupe F</div>
+                            <div>01 dec. 2022</div> 
+                        </div> 
+                        <div class="match-location">Khalifa International Stadium</div>
+                        <div class="container-teams-time">
+                            <div class="teams">
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/Japon.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Japon</p>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/Espagne.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Espagne</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time">20:00</div>
+                        </div>
+                    </div>
+                    <div class="match">
+                        <div class="match-info">
+                            <div>Match 44, Groupe F</div>
+                            <div>01 dec. 2022</div> 
+                        </div> 
+                        <div class="match-location">stade Al Bayt</div>
+                        <div class="container-teams-time">
+                            <div class="teams">
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/Costa Rica.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Costa Rica</p>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img src="./images/groupes/Allemagne.png" alt="">
+                                    </div>
+                                    <div class="team-name">
+                                        <p>Allemagne</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time">20:00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+    
+              <!-- <div><img src="images/dahabi.jpg" alt=""></div> -->  
+
+
+
+                <table class="table1 ma-table" border="1">
+                    <caption class="caption">Maroc</caption>
+                    <thead>
+                        <tr> 
+                            <th>Joueur</th>
+                            <th>Palmarès</th>
+                            <th colspan="2"><input type="button" value="Ajouter" onclick="ajouter(this)"></th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="player_name">Yassine Bounou</td>
+                            <td class="player_pal">
+                              <p> UEFA Europa League x1 (2019/2020)
+                               Liga x1 (2013/2014)
+                               Supercoupe d'Espagne x1 (2014/2015)</p>
+                            </td>
+                            <td><input type="button" value="Modifier" onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="player_name">Hakim Ziyech</td>
+                            <td class="player_pal">
+                                <p>EREDIVISIE x1 (2018/2019)
+                                LIGUE DES CHAMPIONS UEF x1 (2020/2021)
+                                SUPER COUPE DE L'UEFA x1 (2021/2022)
+                                COUPE DU MONDE DES CLUBS x1 (2021)</p>
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                        </tr>
+                        <tr>
+                            <td class="player_name">Achraf Hakimi</td>
+                            <td class="player_pal">
+                                <p>LIGUE DES CHAMPIONS UEFA x2
+                                LIGUE 1 UBER EATS x1
+                                TROPHÉE DES CHAMPIONS x1
+                                LIGA x1
+                                SUPER CUP x1</p>    
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                        </tr> 
+                        <tr>
+                            <td class="player_name">Sofyan Amrabat</td>
+                            <td class="player_pal">
+                                <p>Coupe des Pays-Bas (2016)
+                                Jupiler Pro League (2020)</p> 
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                        </tr>
+                        
+
+                    </tbody>
+                    
+                    <tfoot>
+                        
+                    </tfoot>
+                </table>
+
+                <table class="table2 es-table" border="1" >
+                    <caption class="caption">Espagne</caption>
+                    <thead>
+                        <tr> 
+                            <th>Joueur</th>
+                            <th>Palmarès</th>
+                            <th colspan="2"><input type="button" value="Ajouter" onclick="ajouter(this)"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="player_name">CÉSAR AZPILICUETA</td>
+                            <td class="player_pal">
+                                <p>LIGUE DES CHAMPIONS UEFA x1
+                                UEFA EUROPA LEAGUE x2 
+                                TROPHÉE DES CHAMPIONS x2
+                                COUPE DE LA LIGUE BKT x2
+                                COUPE DU MONDE DES CLUBS x1</p>
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="player_name">SERGIO BUSQUETS</td>
+                            <td class="player_pal">
+                                <p>COUPE DU MONDE x1
+                                LIGUE DES CHAMPIONS UEFA x3 
+                                LIGA x8 
+                                TROPHÉE JOAN GAMPER x6</p>
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                        </tr>
+                        <tr>
+                            <td class="player_name">ROBERT SÁNCHEZ</td>
+                            <td class="player_pal">
+                                <p>
+
+                                </p>
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                        </tr> 
+                        <tr>
+                            <td class="player_name">ÁLVARO MORATA</td>
+                            <td class="player_pal">
+                                <p>SUPERCOUPE D'ITALIE x2
+                                Liga x2  
+                                LIGUE DES CHAMPIONS UEFA x2
+                                INTERNATIONAL CHAMPIONS CUP x1</p>
+                            </td>
+                            <td><input type="button" value="Modifier"  onclick="modifier(this)"> </td>
+                            <td><input type="button" value="Supprimer" onclick="supprimer(this)"> </td>
+                        </tr>
+                    </tbody>
+                    <div>
+                        
+                    </div>
+                </table> 
+
+                <div class="classement ">
+                    <div class="classe-title">
+                        <h2>Classement</h2>
+                    </div>
+                    <div class="">
+                        
+                        <div class="classe_A | classe">
+                            <img src="./images/classement/A.png" alt="Classement de groupe A">
+                        </div>
+    
+                        <div class="classe_B | classe">
+                            <img src="./images/classement/B.png" alt="Classement de groupe B">
+                        </div>
+    
+                        <div class="classe_C | classe">
+                            <img src="./images/classement/c.png" alt="Classement de groupe C">
+                        </div>
+    
+                        <div class="classe_D | classe">
+                            <img src="./images/classement/D.png" alt="Classement de groupe D">
+                        </div>
+    
+                        <div class="classe_E | classe">
+                            <img src="./images/classement/E.png" alt="Classement de groupe E">
+                        </div>
+    
+                        <div class="classe_F | classe">
+                            <img src="./images/classement/F.png" alt="Classement de groupe F">
+                        </div>
+                        <div class="classe_G | classe">
+                            <img src="./images/classement/G.png" alt="Classement de groupe G">
+                        </div>
+                        <div class="classe_H | classe">
+                            <img src="./images/classement/H.png" alt="Classement de groupe H">
+                        </div>
+                    </div>    
+                </div>
+
+
+            </section>
+        </div>
+        <section class="side-bar-2">
+           
+
+<!--  <div class="actua">
+                <div class="act-title">
+        
+                </div>
+                <div class="">
+                    
+                    <div class="act1 | act">
+                        <a href ="#"><img src="./images/news/act1.jpg" alt="Act 1"></a>
+                        <p>
+                            Le Maroc s’est qualifié pour les 8es de finale de la Coupe du monde, en prenant la première place du groupe F après sa victoire contre le Canada
+                        </p>
+                    </div>
+
+                    <div class="act2 | act">
+                        <a href ="#"><img src="./images/news/act2.png" alt="Act 2"></a>
+                        <p>
+                            Les États-Unis retrouveront les Pays-Bas en huitièmes
+                        </p>
+                    </div>
+
+                    <div class="act3 | act">
+                        <a href ="#"><img src="./images/news/act3.png" alt="Act 3"></a>
+                        <p>
+                            
+                            Sabiri profite de son heure de gloire
+                        </p>
+                    </div>
+
+                    <div class="act4 | act">
+                        <a href ="#"><img src="./images/news/act4.png" alt="Act 4"></a>
+                        <p>
+                            Le Brésil s'invite à son tour en huitièmes
+                        </p>
+                    </div>
+
+                    <div class="act5 | act">
+                        <a href ="#"><img src="./images/news/act5.png" alt="Act 5"></a>
+                        <p>
+                            20 ans après, revoilà le Sénégal en huitièmes
+                        </p>
+                    </div>
+
+                    <div class="act6 | act">
+                        <a href ="#"><img src="./images/news/act6.png" alt="Act 6"></a>
+                        <p>
+                            
+                            Regragui : "Ce que je peux promettre, c'est que nous allons tout donner"
+                        </p>
+                    </div> 
+                </div>
+            </div>-->
+
+
+            <div class="tout">
+                <div class="actu1">
+            <a href="https://www.nytimes.com/2022/12/03/sports/soccer/messi-argentina-world-cup.html">   <img src="images/ac1.webp" alt=""> </a>
+                 <h3>
+                    Le score de Messi donne le ton à l'Argentine lors de la victoire en Coupe du monde
+                 </h3>
+                 <p>Messi n'avait jamais marqué auparavant dans un match à élimination pendant la Coupe du monde.</p>
+                </div>
+                <div class="actu1">
+                    <a href=" https://fr.hespress.com/292216-mondial-2022-le-programme-des-matchs-de-ce-dimanche.html">     <img src="images/fr.webp" alt=""> </a>
+                      <h3>
+                        Mondial 2022 : l'étoile des Bleus face à Lewandowski, pour briller ou filer
+                      </h3>
+                      <p>Dans l’après-guerre, aucune sélection ne s’est maintenue sur le trône de la Coupe du monde depuis le Brésil de Pelé, en 1962..</p>
+                     </div>
+                     <div class="actu1">
+                        <a href="https://fr.hespress.com/292199-mondial-2022-les-supporters-marocains-le-douzieme-homme-selon-la-fifa.html">     <img src="images/mr.jpg" alt=""> </a>
+                          <h3>
+                            Mondial 2022: les supporters marocains, le "douzième homme" selon la FIFA
+                          </h3>
+                          <p>Les supporters marocains ont joué un rôle essentiel depuis le début du Mondial-2022, rapporte la fédération internationale de football (FIFA), notant que le public marocain a été le « douzième homme » derrière les Lions de l’Atlas.
+    
+                            .</p>
+                         </div>
+            </div>
+
+
+
+
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="top-footer">
+            <div class="site-logo">
+                <h5>Coup De Monde 2022 </h5>
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div>
+                <h5>Nos services</h5>
+                <ul class="pages-url">
+                    <a href="#"><li>Accueil</li></a>
+                    <a href="#"><li>Matchs</li></a> 
+                    <a href="#"><li>Equipes</li></a>
+                    <a href="#"><li>Classement</li></a>
+            </div>
+                </ul>
+            <div>
+                <h5>Social media</h5>
+                <ul class="social-media">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                            Youtube
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+
+                <h5>Adminstrateur</h5>
+                <ul class="admin-info">
+                    <li>+6 78 65 43 21</li>
+                    <li>xyz@example.com</li>
+                    <li>Tanger Maroc</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy-right">
+            &copy; 2022 GI Design All rights reserved
+        </div>
+    </footer>
+</body>
+</html>

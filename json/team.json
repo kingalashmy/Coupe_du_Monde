@@ -1,0 +1,65 @@
+[
+    {
+        "Groupe": "A",
+        "paye1":"Pays-Bas",
+        "paye2":"Equateur",
+        "paye3":"Sénégal",
+        "paye4":"Qatar"
+    },
+
+    {
+        "Groupe": "B",
+        "paye1":"Engleterre",
+        "paye2":"Iran",
+        "paye3":"Etats-Unis",
+        "paye4":"Pays de Galles"
+    },
+
+    {
+        "Groupe": "C",
+        "paye1":"Pologne",
+        "paye2":"Argentine",
+        "paye3":"Arabie Saoudite",
+        "paye4":"Mexique"
+    },
+
+    {
+        "Groupe": "D",
+        "paye1":"France",
+        "paye2":"Australie",
+        "paye3":"Danemark",
+        "paye4":"Tunisie"
+    },
+
+    {
+        "Groupe": "E",
+        "paye1":"Espagne",
+        "paye2":"Japon",
+        "paye3":"Costa Rica",
+        "paye4":"Allemagne"
+    },
+
+    {
+        "Groupe": "F",
+        "paye1":"Croatie",
+        "paye2":"Maroc",
+        "paye3":"Belgique",
+        "paye4":"Canada"
+    },
+
+    {
+        "Groupe": "G",
+        "paye1":"Brésil",
+        "paye2":"Suisse",
+        "paye3":"Cameroun",
+        "paye4":"Serbie"
+    },
+
+    {
+        "Groupe": "H",
+        "paye1":"Portugal",
+        "paye2":"Ghana",
+        "paye3":"République de Corée",
+        "paye4":"Uruguay"
+    }
+]

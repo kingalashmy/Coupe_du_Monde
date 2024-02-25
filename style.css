@@ -1,0 +1,537 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+/* picalili modern reset https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/*ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}*/
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+/*a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+*/
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* end picalili modern reset */
+
+a{
+  color: #000;
+}
+
+header{
+  background-image: linear-gradient(to left, rgba(10,3,5,0), rgb(116, 24, 24));
+
+
+}
+
+/* grid system */
+
+footer{
+  /* background-color: blue; */
+  /* height: 10rem;  a supprimer */
+  border-top: 1px solid rgba(42, 42, 72, .2);
+}
+.vol-4{ 
+  /*height: 30rem;
+  background-color: cadetblue;*/
+}
+
+.template-grid{
+  display: grid;
+  grid-template-areas: 
+          "a b d"
+          "a b d"
+  ;
+  grid-template-columns: 20% 55% 25%;
+}
+.vol-3-vol-4-container{
+  grid-area: b;
+}
+.side-bar-1{
+  /* background-color: chartreuse; */
+  border: 1px solid rgba(42, 42, 72, .2);
+  grid-area: a;
+}
+.side-bar-2{
+  grid-area: d;
+}
+
+/* nav menu styling */
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav > ul {
+
+ margin-left: 680px;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  align-items: center;
+}
+
+
+header nav > ul li {
+  list-style-type: none;
+}
+header nav > ul >li >a {
+  text-decoration: none;
+  color: hsl(240, 26%, 22%,.3);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+header nav > ul >li  {
+  text-decoration: none;
+  color: hsl(240, 26%, 22%,.3);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+header nav > ul >li :hover{
+  color: #9B1033;
+  transition: ease-in 0.4s all;
+}
+header nav > ul >li >div >ul >li >a ,header nav > ul >li[class="active"] >a{
+  text-decoration: none;
+  color: #9B1033;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.drop-down-menu[area="false"]{
+  display: none;
+}
+/* drop down */
+.drop-down-menu {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 1rem 5rem -2rem #000;
+  
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
+.drop-down-menu ul {
+  padding: 0;
+}
+
+
+/* footer styling */
+
+.site-logo img {
+  max-width: 100px;
+  margin: auto;
+   padding: 10px;
+  margin-left: 20px;
+
+}
+
+.top-footer{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  padding-top: 50px;
+
+}
+.top-footer h5{
+  font-size: large;
+  font-weight: 700;
+  color: #9B1033;
+}
+.top-footer ul {
+  max-width: 20vw;
+  margin: 0;
+  padding: 0;
+}
+
+.top-footer ul li {
+  list-style-type: none;
+
+}
+.top-footer a {
+  text-decoration: none;
+}
+.social-media a {
+  display: flex;
+}
+.social-media li {
+  display: flex;
+  align-items: center;
+}
+.social-media i {
+  margin-right: .5rem;
+  display: flex;
+  align-items: center;
+}
+.copy-right {
+  text-align: end;
+  margin-right: 10%;
+  margin-left:5%;
+  border-top: 1px solid black;
+  padding: 20px 3px 80px 0;
+  color: #9B1033;
+}
+
+
+/* side bar 2 styling */
+
+.actua{
+  padding-inline: 10px;
+  
+}
+.side-bar-2{
+  border-left: 1px solid rgba(42, 42, 72, .2);
+  border-top: 1px solid rgba(42, 42, 72, .2);
+
+  
+}
+.act-title{
+  text-align: center;
+  color: #9B1033;
+}
+.act{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(42, 42, 72, .5);
+}
+.act p {
+  padding-inline: 30px;
+}
+ /*classement styling */
+.classe_title{
+  text-align: center;
+}
+.classe{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(42, 42, 72, .5);
+}
+.classe img {
+  padding-inline: 30px;
+}
+
+
+#groupes-button{
+  cursor: pointer;
+}
+
+.group-title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.pays p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  
+}
+.cover-no-shadow-box{
+  
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 100;
+}
+.cover-shadow-box{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: rgba(0, 0, 0,.4);
+}
+.pays{
+  position: relative;
+  margin: 1rem;
+  height: 8rem;
+}
+.pays img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+
+
+/* vol 3 styling */
+.vol-3{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /*border-top: 1px solid rgba(42, 42, 72, .2);*/
+ 
+
+  /* gap: 1rem; */
+}
+
+.player img{
+  /*max-width: 90%;*/ 
+  margin: auto;
+}
+.player{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+  border-radius: 10px;
+  transition: all .4s ease-in-out;
+}
+
+.player:hover{
+  transform: scale(1.1,1.1);
+}
+.player h5, .player h4 {
+  margin: 0;
+  text-align: center;
+}
+.player h4{
+  margin-top: .5rem;
+  font-size: .8rem;
+  font-weight: 400;
+  color: black;
+}
+.player h5{
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  color: black;
+}
+
+
+
+/* players */
+
+
+table{
+  /* min-width: 100%; */
+  margin: 2rem;
+  text-align: center;
+}
+
+caption {
+  font-size: 2rem;
+  color: #9B1033;
+}
+/* vol-4 styling */
+.vol-4{
+ /* border-top: 1px solid rgba(42, 42, 72, .2);*/
+}
+
+/* match styling */
+.matchs{
+  max-width: 90%;
+  margin: auto;;
+}
+.matchs h1 {
+  font-size: 3rem;
+  text-align: center; 
+}
+.match{
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+.match-info,.match-location{
+  color: hsl(240, 26%, 22%,.5);
+  font-weight: 700;
+}
+.time{
+  font-size: 2rem;
+}
+.match img{
+  max-width: 25px;
+}
+.team,.container-teams-time,.match-info{
+  display: flex;
+  align-items: center;
+}
+.container-teams-time,.match-info{
+  justify-content: space-between;
+}
+.team p{
+  font-size: 1.5rem;
+  margin-left: .7rem;
+}
+/* colors */
+.top-footer li {
+  color: #2A2A48;
+}
+
+.grp-a , .grp-b ,.grp-c{
+  display: none;
+}
+
+
+
+/** image welcome to qatar-*************/
+div .imo{
+  padding: 20px;
+}
+
+
+
+/* default display */
+
+.classement {
+  padding: 16px;
+}
+.es_player,.ma_player,.classement,.fiche{
+  display: none;
+}
+.es-table,.ma-table,.matchs{
+  display: none;
+
+}
+.classement{
+  display:none;
+  cursor: pointer;
+}
+.vol-3-vol-4-container{
+ 
+}
+/*****table volet 4********************************************/
+
+.table1 , .table2{
+  border: none;
+background-color: #cdcdcd;
+border-radius: 5px;
+}
+.table1 .caption , .es-table .caption{
+  margin-bottom: 10px;
+  border-bottom: #9B1033 solid 2px;
+}
+.table1 td , .table2 td {
+  padding: 20px;
+}
+.table1 input , .table2 input{
+  padding: 5px 15px 5px 15px ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.template-grid{
+  background-color: #f5f6fa;
+}
+/***actulite***/
+.tout .actu1{
+  background-color: #e9e8e8;
+  padding: 15px;
+}
+.tout .actu1 h3{
+  margin-left: 10px;
+}
+.tout .actu1 img{
+border: 2px solid rgb(107, 107, 107);
+padding: 0;
+
+}
+.tout .actu1 p{
+  margin-left: 20px;
+}
+/*****fiche technique**/
+
+.fiche_technique .fiche{
+  background-color: #fff;
+  height: 350px;
+  position: relative;
+  
+}
+
+
+
+.fiche_technique .fiche .m1{
+  width: 200px;
+height: 200px;
+border: 2px solid gray;
+padding:20px ;
+margin: 12px;
+position: relative;
+
+}
+.fiche_technique .fiche  .cart{
+  position: absolute;
+  left: 33%;
+  bottom: 30px;
+}
+.fiche_technique .fiche  .cart  li{
+  font-weight: 600;
+}
